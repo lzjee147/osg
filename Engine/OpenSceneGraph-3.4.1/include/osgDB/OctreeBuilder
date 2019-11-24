@@ -1,0 +1,174 @@
+#pragma once
+
+#include <osg/Geode>  
+#include <osg/Geometry>  
+#include <osgGe/BoundingBox>
+#include <osgGe/Vec2f>
+#include <osgGe/Vec3>
+#include <sstream>
+#include <string>
+#include <iostream>
+#include <string>
+#include <osgDB/Export>
+#include <osg/Object>
+
+#include <osg/CopyOp>
+
+namespace osgDB {
+
+
+class OSGDB_EXPORT FourthNode : public osg::Object
+{
+public:
+
+	virtual Object* cloneType() const { return NULL; }
+
+
+	virtual Object* clone(const osg::CopyOp& copyop) const { return NULL; }
+
+	virtual bool isSameKindAs(const Object* obj) const { return true; }
+
+
+	virtual const char* libraryName() const { return "osg"; }
+
+	virtual const char* className() const { return "Node"; }
+
+	FourthNode()
+	{
+		for (size_t i = 0; i < 4; i++)
+		{
+			node[i] = NULL;
+		}
+
+		name = "00.ive";
+		num = 0;
+
+		root = 0;
+
+		group_ = NULL;
+
+		geom_ = new osg::Geometry;  
+	    va_ = new osg::Vec3Array(); 
+
+	    normal_ = new osg::Vec3Array(); 
+	    texcoords_ = new osg::Vec2Array(); 
+		update_model_ = false;
+
+		group_ = NULL;
+
+		group_10_ = new osg::Group();
+		max_num_ = 0;
+
+		isLoad_ = false;
+
+		isDirectory_ = false;
+
+	}
+
+	FourthNode* node[4];
+
+	FourthNode* root;
+
+	osg::BoundingBoxf box;
+
+	std::string name;
+
+	bool isDirectory_;
+
+	int num;
+
+	int total;
+
+	osg::ref_ptr<osg::Geometry>  geom_     ; 
+
+	osg::ref_ptr<osg::Vec3Array> va_       ; 
+	osg::ref_ptr<osg::Vec3Array> normal_   ; 
+	osg::ref_ptr<osg::Vec2Array> texcoords_;
+
+	std::map<std::string, osg::BoundingBox> geodes_box_;
+
+	std::vector<osg::Geometry*> geos_;
+
+	osg::Group* group_;
+
+	osg::Group* group_10_;
+
+	std::string ive_fold;
+
+	int geode_num_;
+
+	//分块的名字
+	std::string block_name_;
+
+	std::string block_name_10_;
+
+	bool update_model_;
+
+	//文件名字列表
+	std::vector<std::string> file_names;
+
+	int max_num_;
+
+	bool isLoad_;
+
+	//每个节点的Geode
+	std::map<int, std::string> id_name;
+
+	//需要写出的
+
+	typedef struct
+	{
+		float ratio_ ;//0.1, 0.2, 0.3
+
+		float first_ ;
+        float second_;
+
+		std::string name_;
+
+		std::string out_path;
+
+	} PageInfo;
+
+	std::vector<PageInfo> pagelod_num_;
+};
+
+
+class OSGDB_EXPORT OctreeBuilder  : public osg::Object
+{  
+public:  
+	OctreeBuilder(){}
+
+	virtual Object* cloneType() const { return NULL; }
+
+
+	virtual Object* clone(const osg::CopyOp& copyop) const { return NULL; }
+
+	virtual bool isSameKindAs(const Object* obj) const { return true; }
+
+
+	virtual const char* libraryName() const { return "osg"; }
+
+	virtual const char* className() const { return "Node"; }
+
+    void FindNode(int num, FourthNode* root);
+
+    void build(FourthNode* root, int num,std::string projectpath) ; 
+
+	osg::Geode* DrawTree();
+
+	std::vector<std::string> GetNodeFiles(osg::Vec3d f, osg::Vec3d s);
+
+	void GetSelectNodes(osg::Vec3d f, osg::Vec3d s, osg::Group* group);
+
+	osg::Node* GetSelectNodes(osg::Vec3d f, osg::Vec3d s);
+
+	void GetMeasureNodes(osg::Vec3d f, osg::Vec3d s, osg::Group* group);
+
+	 FourthNode* GetRoot();
+private:
+	FourthNode* fourthNode_;
+	std::string project_path_;
+};  
+
+}
+

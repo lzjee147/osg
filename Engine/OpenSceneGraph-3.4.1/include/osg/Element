@@ -1,0 +1,68 @@
+#ifndef OSG_ELEMENT
+#define OSG_ELEMENT 1
+
+#include <osg/Object>
+#include <osg/StateSet>
+#include <osgGe/BoundingSphere>
+#include <osgGe/BoundingBox>
+#include <osg/Callback>
+#include <osg/EdgeCollapse.h>
+
+#include <string>
+#include <vector>
+
+namespace osg {
+
+	//By Zhx : 用于储存点/面及简化序列
+
+	class OSG_EXPORT Element : public osg::Object
+	{
+		public:
+
+			Element();
+
+			virtual ~Element();
+
+			virtual Object* cloneType() const { return NULL; }
+
+			virtual Object* clone(const osg::CopyOp& copyop) const { return NULL; }
+
+			/** return true if this and obj are of the same kind of object.*/
+			virtual bool isSameKindAs(const Object* obj) const { return dynamic_cast<const Element*>(obj)!=NULL; }
+
+			/** return the name of the node's library.*/
+			virtual const char* libraryName() const { return "osg"; }
+
+			/** return the name of the node's class type.*/
+			virtual const char* className() const { return "Element"; }
+
+			void GetCollapseResult(std::vector<EdgeCollapse::CollapseResult> collapseresult);
+
+			bool GetPointInthePlane(osg::ref_ptr<EdgeCollapse::Point>& intersectpoint,osg::ref_ptr<EdgeCollapse::Point> beginpoint,osg::ref_ptr<EdgeCollapse::Point> endpoint,osg::Plane splitplane);
+
+			void SplitElement(osg::BoundingBox splitbox,osg::BoundingBox splitboxend,osg::Plane splitplane,osg::ref_ptr<Element>& begin_half_ele,osg::ref_ptr<Element>& end_half_ele);
+
+		public:
+
+			std::vector<EdgeCollapse::CollapseResult> _collapse_result;
+
+		public:
+
+			std::string projectpath_;  //工程路径
+
+			std::string _fromfilename; //来源的文件名
+
+			int _eleid;          //构件ID
+
+			std::string _elename;    // 构件名称
+
+			int _numberverter;    //该构件的顶点数
+
+			int _numberfaces;		// 该构件的面数
+
+			BoundingBox _eleboundbox;   // 该构件的包围盒
+	};
+
+}
+
+#endif

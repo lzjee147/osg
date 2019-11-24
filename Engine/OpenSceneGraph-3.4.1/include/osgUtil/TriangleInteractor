@@ -1,0 +1,42 @@
+
+#pragma once
+#include <osgUtil/LineSegmentIntersector>
+
+#include <osg/ref_ptr>
+
+#include <vector>
+
+namespace osgUtil {
+
+struct Triangle
+{
+	osg::Vec3d v1;
+	
+	osg::Vec3d v2;
+
+	osg::Vec3d v3;
+};
+
+class OSGUTIL_EXPORT TriangleInteractor : public osgUtil::LineSegmentIntersector
+{
+public:
+	TriangleInteractor(CoordinateFrame cf, const osg::Vec3d& start, const osg::Vec3d& end, LineSegmentIntersector* parent = NULL,
+		osgUtil::Intersector::IntersectionLimit intersectionLimit = osgUtil::Intersector::NO_LIMIT) : LineSegmentIntersector(cf, start, end, NULL, osgUtil::Intersector::NO_LIMIT)
+	{
+
+	}
+
+public:
+
+	void TriangleInteractor::intersect(osgUtil::IntersectionVisitor& iv, osg::Drawable* drawable, const osg::Vec3d& s, const osg::Vec3d& e);
+
+	std::vector<osg::Vec3d> GetPickPoint();
+
+public:
+
+	std::vector<osg::Vec3d> triangle_;
+};
+
+}
+
+

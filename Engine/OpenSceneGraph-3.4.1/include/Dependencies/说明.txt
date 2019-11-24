@@ -1,0 +1,5 @@
+程序编译路径:
+	E:\TSZ\3DFramework\trunk\Dependencies\FreeImage\FreeImage.2010.sln
+
+编译后，DLL,pdb,lib批量整理工具：
+	E:\TSZ\3DFramework\trunk\Dependencies\FreeImage\copy All.bat

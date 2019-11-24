@@ -1,0 +1,52 @@
+
+#pragma once
+
+#include <osgViewer/Viewer>
+#include <osgGA/GUIEventHandler>
+#include <osgGA/GUIEventAdapter>
+#include <osgText/Text>
+#include <osg/ref_ptr>
+
+#include <osgWidget/Box>
+#include <osgWidget/Label>
+
+#include <osgWidget/PushButton>  
+
+namespace osgWidget {
+class OSGWIDGET_EXPORT PushbuttonBox : public osgWidget::Box 
+{
+public:
+	PushbuttonBox() ;
+	~PushbuttonBox();
+
+public:
+	enum MouseState 
+	{
+		Normal, 
+		HOVER , 
+		PRESS , 
+	}; 
+
+public:
+
+	void removeLabel()    ;
+	void addLable()   ;
+	void addLable(const std::wstring& text)   ;
+	void setText(const std::string& text);
+	void setWText(const std::wstring& text);
+	osgWidget::PushButton* getButton();
+	osgWidget::Label* PushbuttonBox::getLabel();
+	void setMouseStateInfo(buttonInfo& buttonInfo);
+
+private:
+    osgWidget::Label*       label_  ; 
+	osgWidget::PushButton*  button_ ; 
+
+    std::string       text_   ;
+	std::wstring       wtext_   ;
+};
+}
+
+
+
+

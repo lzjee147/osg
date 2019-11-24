@@ -1,0 +1,77 @@
+/* -*-c++-*- OpenSceneGraph - Copyright (C) 1998-2008 Robert Osfield
+ *
+ * This library is open source and may be redistributed and/or modified under
+ * the terms of the OpenSceneGraph Public License (OSGPL) version 0.0 or
+ * (at your option) any later version.  The full license is in LICENSE file
+ * included with this distribution, and on the openscenegraph.org website.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * OpenSceneGraph Public License for more details.
+*/
+
+// Code by: Jeremy Moles (cubicool) 2007-2008
+
+#pragma once
+
+#include <osgWidget/Widget>
+#include <osgWidget/Window>
+#include <osgWidget/Box>
+
+
+namespace osgWidget {
+
+enum mouse_state_image
+{
+	mouse_normal      ,
+	mouse_over        ,
+	mouse_push_state1 ,
+	mouse_push_state2 ,
+	mouse_push_state3 ,
+};
+
+typedef struct
+{
+	int x;
+	int y;
+	// Û±Í¿‡–Õ
+	int buttont_type_                       ;
+
+	std::vector<std::string> images_;
+	std::vector<std::wstring> texts_ ; 
+
+} buttonInfo;
+
+class  OSGWIDGET_EXPORT PushButton : public osgWidget::Widget
+{
+public:
+	PushButton(osgWidget::Box* box);
+	~PushButton();
+
+	bool mousePush(double, double, const osgWidget::WindowManager* wm);
+	bool mouseRelease(double, double, const osgWidget::WindowManager*); 
+
+	bool mouseEnter(double, double, const osgWidget::WindowManager* wm)  ;
+	bool mouseLeave(double, double, const osgWidget::WindowManager* wm)  ;
+
+public:
+
+	void setMouseStateInfo(buttonInfo& button_Info);
+	int getCurrentState();
+	int getImageSize();
+	void setMouseState(int mouseState);
+
+private:
+	osgWidget::Box* box_;
+	int mouse_state_;
+	osg::ref_ptr<osg::Image> normal_image_; 
+	osg::ref_ptr<osg::Image> hover_image_ ;
+	osg::ref_ptr<osg::Image> press_image_ ;
+	buttonInfo button_Info_;
+	void setLabel();
+
+};
+}
+
+
