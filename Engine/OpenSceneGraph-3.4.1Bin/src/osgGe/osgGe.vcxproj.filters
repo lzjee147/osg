@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C0AF30FF-09E9-336D-933D-4A112C9A0EA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{AEA53667-CF38-3133-AD38-C68AAAD11FD0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Math">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\MixinVector">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Plane">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec2">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec2b">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec2d">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec2f">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec2i">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec2s">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec2ub">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec2ui">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec2us">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec3">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec3b">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec3d">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec3f">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec3i">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec3s">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec3ub">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec3ui">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec3us">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec4">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec4b">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec4d">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec4f">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec4i">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec4s">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec4ub">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec4ui">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Vec4us">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\Export">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\BoundingBox">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\BoundingSphere">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgGe\Math.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgGe\StringTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\StringTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\OpenSceneGraph-3.4.1\include\osgGe\OcGeLGLtype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

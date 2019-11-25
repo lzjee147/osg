@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgUI\Widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgUI\ColorPalette.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgUI\Label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgUI\LineEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgUI\Dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgUI\Popup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgUI\PushButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgUI\ComboBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgUI\Callbacks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgUI\Style.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgUI\AlignmentSettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgUI\FrameSettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgUI\TabWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgUI\TextSettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgUI\Validator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\Export">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\ColorPalette">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\Widget">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\Label">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\LineEdit">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\Dialog">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\Popup">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\PushButton">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\ComboBox">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\Callbacks">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\Style">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\AlignmentSettings">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\FrameSettings">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\TabWidget">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\TextSettings">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgUI\Validator">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C0AF30FF-09E9-336D-933D-4A112C9A0EA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{AEA53667-CF38-3133-AD38-C68AAAD11FD0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\Box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\Browser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\PdfReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\VncClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\Canvas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\Frame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\Label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\Lua.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\Python.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\StyleManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\Table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\Version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\ViewerEventHandlers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\Widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\WindowManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\PushButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgWidget\PushButtonBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\Export">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\Box">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\Browser">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\PdfReader">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\VncClient">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\Canvas">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\EventInterface">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\Frame">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\Input">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\Label">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\Lua">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\Python">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\ScriptEngine">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\StyleInterface">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\StyleManager">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\Table">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\Types">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\UIObjectParent">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\Util">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\Version">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\ViewerEventHandlers">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\Widget">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\Window">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\WindowManager">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\PushButton">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgWidget\PushbuttonBox">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C0AF30FF-09E9-336D-933D-4A112C9A0EA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{AEA53667-CF38-3133-AD38-C68AAAD11FD0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

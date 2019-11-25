@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\OpenSceneGraph-3.4.1\src\osgPlugins\osg\ReaderWriterOSG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\OpenSceneGraph-3.4.1\src\osgPlugins\osg\ReaderWriterOSG2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\OpenSceneGraph-3.4.1\src\osgPlugins\osg\AsciiStreamOperator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OpenSceneGraph-3.4.1\src\osgPlugins\osg\BinaryStreamOperator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\OpenSceneGraph-3.4.1\src\osgPlugins\osg\XmlStreamOperator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C0AF30FF-09E9-336D-933D-4A112C9A0EA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{AEA53667-CF38-3133-AD38-C68AAAD11FD0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

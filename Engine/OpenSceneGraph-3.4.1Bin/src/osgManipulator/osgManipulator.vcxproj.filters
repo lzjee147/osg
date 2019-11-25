@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\AntiSquish.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\Command.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\Constraint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\Dragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\Projector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\RotateCylinderDragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\RotateSphereDragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\Scale1DDragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\Scale2DDragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\ScaleAxisDragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\TabBoxDragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\TabBoxTrackballDragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\TabPlaneDragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\TabPlaneTrackballDragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\TrackballDragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\Translate1DDragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\Translate2DDragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\TranslateAxisDragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\TranslatePlaneDragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgManipulator\Version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\AntiSquish">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\Command">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\CommandManager">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\Constraint">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\Dragger">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\Export">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\Projector">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\RotateCylinderDragger">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\RotateSphereDragger">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\Scale1DDragger">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\Scale2DDragger">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\ScaleAxisDragger">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\Selection">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\TabBoxDragger">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\TabBoxTrackballDragger">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\TabPlaneDragger">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\TabPlaneTrackballDragger">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\TrackballDragger">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\Translate1DDragger">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\Translate2DDragger">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\TranslateAxisDragger">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\TranslatePlaneDragger">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgManipulator\Version">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C0AF30FF-09E9-336D-933D-4A112C9A0EA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{AEA53667-CF38-3133-AD38-C68AAAD11FD0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

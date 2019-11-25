@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{14B3AD82-5D37-30AC-AF00-A673E72913EA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>osgDB</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\OpenSDK\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">osgDB.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">osg131-osgDBd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\OpenSDK\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">osgDB.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">osg131-osgDB</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\OpenSceneGraph-3.4.1Bin\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">osgDB.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">osg131-osgDBs</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\OpenSceneGraph-3.4.1Bin\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">osgDB.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">osg131-osgDBrd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\OpenSceneGraph-3.4.1\include;..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;OSG_LIBRARY_POSTFIX=d;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files/OpenSceneGraph/lib/osgPlugins-3.4.1";OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Debug";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;OSG_LIBRARY_POSTFIX=d;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files/OpenSceneGraph/lib/osgPlugins-3.4.1\";OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Debug\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenSceneGraph-3.4.1\include;D:\OpenSceneGraph-3.4.1Bin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenSceneGraph-3.4.1\include;D:\OpenSceneGraph-3.4.1Bin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../../../OpenSDK/bin/Debug</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>..\..\..\..\OpenSDK\bin\Debug\osgDBd.lib</ImportLibrary>
+      <ProgramDataBaseFile>../../../../OpenSDK/bin/Debug/osg131-osgDBd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\OpenSceneGraph-3.4.1\include;..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files/OpenSceneGraph/lib/osgPlugins-3.4.1";OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Release";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files/OpenSceneGraph/lib/osgPlugins-3.4.1\";OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Release\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenSceneGraph-3.4.1\include;D:\OpenSceneGraph-3.4.1Bin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenSceneGraph-3.4.1\include;D:\OpenSceneGraph-3.4.1Bin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../../../OpenSDK/bin/Release</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>..\..\..\..\OpenSDK\bin\Release\osgDB.lib</ImportLibrary>
+      <ProgramDataBaseFile>../../../../OpenSDK/bin/Release/osg131-osgDB.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OpenSceneGraph-3.4.1\include;D:\OpenSceneGraph-3.4.1Bin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OSG_LIBRARY_POSTFIX=s;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files/OpenSceneGraph/lib/osgPlugins-3.4.1";OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="MinSizeRel";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OSG_LIBRARY_POSTFIX=s;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files/OpenSceneGraph/lib/osgPlugins-3.4.1\";OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"MinSizeRel\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenSceneGraph-3.4.1\include;D:\OpenSceneGraph-3.4.1Bin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenSceneGraph-3.4.1\include;D:\OpenSceneGraph-3.4.1Bin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\osgUtils.lib;opengl32.lib;..\..\lib\osgs.lib;..\..\lib\OpenThreadss.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/OpenSceneGraph-3.4.1Bin/lib/osgDBs.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/OpenSceneGraph-3.4.1Bin/bin/osg131-osgDBs.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OpenSceneGraph-3.4.1\include;D:\OpenSceneGraph-3.4.1Bin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OSG_LIBRARY_POSTFIX=rd;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files/OpenSceneGraph/lib/osgPlugins-3.4.1";OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="RelWithDebInfo";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OSG_LIBRARY_POSTFIX=rd;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files/OpenSceneGraph/lib/osgPlugins-3.4.1\";OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"RelWithDebInfo\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenSceneGraph-3.4.1\include;D:\OpenSceneGraph-3.4.1Bin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenSceneGraph-3.4.1\include;D:\OpenSceneGraph-3.4.1Bin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\osgUtilrd.lib;opengl32.lib;..\..\lib\osgrd.lib;..\..\lib\OpenThreadsrd.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/OpenSceneGraph-3.4.1Bin/lib/osgDBrd.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/OpenSceneGraph-3.4.1Bin/bin/osg131-osgDBrd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\DataTypes" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\OctreeBuilder" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\StreamOperator" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\Serializer" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\ObjectWrapper" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\InputStream" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\OutputStream" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\Archive" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\AuthenticationMap" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\Callbacks" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\ClassInterface" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\ConvertBase64" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\ConvertUTF" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\DatabasePager" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\DatabaseRevisions" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\DotOsgWrapper" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\DynamicLibrary" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\Export" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\ExternalFileWriter" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\FileCache" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\FileNameUtils" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\FileUtils" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\fstream" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\ImageOptions" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\ImagePager" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\ImageProcessor" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\Input" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\ObjectCache" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\Output" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\Options" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\ParameterOutput" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\PluginQuery" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\ReaderWriter" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\ReadFile" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\Registry" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\SharedStateManager" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\Version" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\WriteFile" />
+    <None Include="..\..\..\OpenSceneGraph-3.4.1\include\osgDB\XmlParser" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\ObjectWrapper.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\InputStream.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\OctreeBuilder.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\OutputStream.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\Compressors.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\Archive.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\AuthenticationMap.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\Callbacks.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\ClassInterface.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\ConvertBase64.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\ConvertUTF.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\DatabasePager.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\DatabaseRevisions.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\DotOsgWrapper.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\DynamicLibrary.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\ExternalFileWriter.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\Field.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\FieldReader.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\FieldReaderIterator.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\FileCache.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\FileNameUtils.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\FileUtils.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\fstream.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\ImageOptions.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\ImagePager.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\Input.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\MimeTypes.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\ObjectCache.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\Output.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\Options.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\PluginQuery.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\ReaderWriter.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\ReadFile.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\Registry.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\SharedStateManager.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\StreamOperator.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\Version.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\WriteFile.cpp" />
+    <ClCompile Include="..\..\..\OpenSceneGraph-3.4.1\src\osgDB\XmlParser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\OpenSceneGraph-3.4.1Bin\src\OpenThreads\win32\OpenThreads.vcxproj">
+      <Project>{2DBFB0C8-E7AC-326B-B70B-182D974166A5}</Project>
+      <Name>OpenThreads</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\OpenSceneGraph-3.4.1Bin\src\osg\osg.vcxproj">
+      <Project>{80B233EB-2B71-3DB0-A4A7-56A6BF9BF3B5}</Project>
+      <Name>osg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\OpenSceneGraph-3.4.1Bin\src\osgUtil\osgUtil.vcxproj">
+      <Project>{DC4746A8-3FBE-3D96-B9A4-A217B2834F26}</Project>
+      <Name>osgUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
